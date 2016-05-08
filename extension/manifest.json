@@ -1,0 +1,20 @@
+{
+  "name": "Tweet+",
+  "description": "A simple way to share your tweets on Google Plus.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+  "64": "Drawing.png",
+  "32":"Drawing.png" 
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://twitter.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": ["jquery.js","main.js"]
+    }
+  ],
+  "permissions":["notifications"]
+}
