@@ -10,8 +10,8 @@ function share_gp() {
         try {
             if (dropper.children.length === 8 || dropper.children.length === 6) {
                 console.log(dropper);
-                var share_button = $(dropper).prepend('<li> <button id="link" type="button" class="dropdown-link fb_tweet">Share on Google Plus</button> </li>');
-                share_button = share_button.find('.fb_tweet');
+                var share_button = $(dropper).prepend('<li> <button id="link" type="button" class="dropdown-link gp_tweet">Share on Google Plus</button> </li>');
+                share_button = share_button.find('.gp_tweet');
                 share_button.click(function () {
                     var post = $(this).parents().eq(7).find('.tweet-timestamp').attr("href");
                     url = 'https://twitter.com' + post;
